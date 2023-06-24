@@ -118,7 +118,7 @@ Step 3: Tokenizer Vietnamese text using the library underthesea
 Step 4: Delete Vietnamese stopwords""")
         st.write("#### Cleaned Data")
         with st.expander("Cleaned Data:"):
-            st.dataframe(df2[["restaurant","review_text","CONTENT"]])
+            st.dataframe(df2[["restaurant","review_text","CONTENT","review_score","CLASS"]])
         image = Image.open('files/Class.png')
         st.image(image)
         st.write("#### Visualization for each class")
